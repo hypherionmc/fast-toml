@@ -50,6 +50,8 @@ function trueValue(val) {
 		case '-':
 		case '.':
 			let num = val
+			// Workaround for LONG getting returned with incorrect values
+			if (typeof val === "string" && val.length > 16) return val;
 			if (num.indexOf('_') != -1)
 				num = num.replace(/_/g, '')
 			if (!isNaN(num))

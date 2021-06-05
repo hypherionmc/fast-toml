@@ -8,15 +8,19 @@ export default {
 	output: {
 		intro: '\nlet source = "", position = 0;',
 
-		// /* target : Node
+		// TODO Uncomment this if you need to build a NODE version
+
+		/*
 		format: 'cjs',
 		file: 'dist/node/fast-toml.js',
-		//*/
+		*/
 
-		/* target : Browser
+		// TODO Uncomment this if you need to build a browser version
+
+
 		format: 'iife',
 		file: 'dist/browser/fast-toml.js',
 		name: 'TOML'
-		// */
-	}
+
+ 	}
 }
